@@ -42,7 +42,7 @@ if __name__ == '__main__':
     try:
         const = FileSystem().read()
         filename = FileSystem().read().get("log_file_path")+ str("Redis.log")
-        logging.basicConfig(filename=filename, filemode='w',
+        logging.basicConfig(filename=filename,
                             format='%(name)s - %(levelname)s - %(message)s')
         logging.info(msg="Redis logging stared")
         server = RedisConfig(host=const.get("redis_host"), port=const.get("redis_port"),
@@ -55,10 +55,10 @@ if __name__ == '__main__':
         logging.info(msg="Redis Set value to database {}".format(str(my_dict)))
         redis_c.setvalue(name="pydict", value=my_dict)
         get = redis_c.getvalue(name="pydict")
-        logging.log(msg="The value got is {}".format(str(my_dict)))
+        logging.info(msg="The value got is {}".format(str(my_dict)))
     except Exception as e:
         print(e)
         filename = FileSystem().read().get("log_file_path")+ str("Redis.log")
-        logging.basicConfig(filename=filename, filemode='w',
+        logging.basicConfig(filename=filename,
                             format='%(name)s - %(levelname)s - %(message)s')
         logging.info(msg="Redis logging Failed and error is {}".format(str(e)))
