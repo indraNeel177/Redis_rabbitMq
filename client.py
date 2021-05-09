@@ -1,5 +1,6 @@
 import pika
 import json
+from utility import FileSystem
 
 
 class MetaClass(type):
@@ -39,8 +40,9 @@ class RabbitMQConfigure(metaclass=MetaClass):
 
 if __name__ == '__main__':
     try:
+        const = FileSystem().read()
         server = RabbitMQConfigure(
-            queue='hello', host='localhost', routing_key='hello', exchange='')
+            queue=const.get("rabbitMq_queue"), host=const.get("redis_host"), routing_key=const.get("rabbitMq_routing_key"), exchange='')
         rabbitMQ = RabbitMQ(server=server)
         my_dict = {1: 'apple', 2: 'ball'}
         rabbitMQ.publish(payloads=my_dict)

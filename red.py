@@ -1,5 +1,7 @@
 import redis
 from  json import dumps, loads
+from utility import FileSystem
+
 
 
 class MetaClass(type):
@@ -39,13 +41,14 @@ class RedisConfig(metaclass=MetaClass):
     
 if __name__ == '__main__':
     try:  
-        server = RedisConfig(host='localhost', port=6379,
-                             db=0, password=None, socket_timeout=None)
+        const = FileSystem().read()
+        server = RedisConfig(host=const.get("redis_host"), port=const.get("redis_port"),
+                             db=const.get("redis_db"), password=None, socket_timeout=None)
         redis_c= Redis_db(server=server)
         my_dict = {1: 'apple', 2: 'ball'}
         redis_c.setvalue(name="pydict", value=my_dict)
         get = redis_c.getvalue(name="pydict")
-        print(loads(get))
+        print(get)
     except Exception as e:
         print(e)
         

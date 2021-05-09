@@ -1,8 +1,8 @@
 import pika
-import sys
-import os
 import json
-
+import os
+import sys
+from utility import FileSystem
 
 class MetaClass(type):
     _instance = {}
@@ -42,7 +42,8 @@ class RabbitMqServer():
 
 if __name__ == '__main__':
     try:
-        server = RabbitMqServerConfigure(host="localhost", queue='hello')
+        const = FileSystem().read()
+        server = RabbitMqServerConfigure(queue=const.get("rabbitMq_queue"), host=const.get("redis_host"))
         rabbitMq = RabbitMqServer(server=server)
         rabbitMq.start_server()
     except KeyboardInterrupt:
