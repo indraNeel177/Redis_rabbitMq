@@ -9,5 +9,5 @@
   "rabbitMq_host": "localhost",
   "rabbitMq_routing_key": "hello",
   "rabbitMq_exchange": null,
-  "log_file_path": "C:/Users/pnaja/OneDrive/Desktop/test/log/"
+  "log_file_path": "/home/indraneel/test/logs/"
 }
