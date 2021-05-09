@@ -1,7 +1,6 @@
 import redis
-from  json import dumps, loads
+from json import dumps, loads
 from utility import FileSystem
-
 
 
 class MetaClass(type):
@@ -15,41 +14,39 @@ class MetaClass(type):
             return cls._instance[cls]
 
 
-
 class Redis_db():
     def __init__(self, server):
         self.server = server
         self.connection = redis.Redis(host=self.server.host, port=self.server.port, db=self.server.db,
-                                        socket_timeout=self.server.socket_timeout)
-    
+                                      socket_timeout=self.server.socket_timeout)
+
     def setvalue(self, name, value):
         value = dumps(value)
         return self.connection.set(name, value)
-    
+
     def getvalue(self, name: str):
         return self.connection.get(name)
 
 
 class RedisConfig(metaclass=MetaClass):
-    def __init__(self,  host='localhost', port=6379,
+    def __init__(self, host='localhost', port=6379,
                  db=0, password=None, socket_timeout=None):
         self.host = host
         self.port = port
         self.db = db
         self.socket_timeout = socket_timeout
 
-    
+
 if __name__ == '__main__':
-    try:  
+    try:
         const = FileSystem().read()
         server = RedisConfig(host=const.get("redis_host"), port=const.get("redis_port"),
-                             db=const.get("redis_db"), password=None, socket_timeout=None)
-        redis_c= Redis_db(server=server)
+                             db=const.get("redis_db"), password=const.get("redis_password"),
+                             socket_timeout=None)
+        redis_c = Redis_db(server=server)
         my_dict = {1: 'apple', 2: 'ball'}
         redis_c.setvalue(name="pydict", value=my_dict)
         get = redis_c.getvalue(name="pydict")
         print(get)
     except Exception as e:
         print(e)
-        
-        

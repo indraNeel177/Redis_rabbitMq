@@ -4,7 +4,7 @@ from utility import FileSystem
 
 
 class MetaClass(type):
-    _instance ={}
+    _instance = {}
 
     def __call__(cls, *args, **kwargs):
         ''' Single ton desgin partten'''
@@ -13,10 +13,9 @@ class MetaClass(type):
             return cls._instance[cls]
 
 
-
 class RabbitMQ():
-    
-    def __init__(self, server): 
+
+    def __init__(self, server):
         self.server = server
         self._connection = pika.BlockingConnection(
             pika.ConnectionParameters(host=self.server.host))
@@ -31,26 +30,21 @@ class RabbitMQ():
 
 
 class RabbitMQConfigure(metaclass=MetaClass):
-    def __init__(self, queue='hello', host='localhost',routing_key='hello', exchange=''):
-      self.queue= queue
-      self.host= host
-      self.routing_key = routing_key
-      self.exchange = exchange
+    def __init__(self, queue='hello', host='localhost', routing_key='hello', exchange=''):
+        self.queue = queue
+        self.host = host
+        self.routing_key = routing_key
+        self.exchange = exchange
 
 
 if __name__ == '__main__':
     try:
         const = FileSystem().read()
         server = RabbitMQConfigure(
-            queue=const.get("rabbitMq_queue"), host=const.get("redis_host"), routing_key=const.get("rabbitMq_routing_key"), exchange='')
+            queue=const.get("rabbitMq_queue"), host=const.get("redis_host"),
+            routing_key=const.get("rabbitMq_routing_key"), exchange=const.get("rabbitMq_exchange"))
         rabbitMQ = RabbitMQ(server=server)
         my_dict = {1: 'apple', 2: 'ball'}
         rabbitMQ.publish(payloads=my_dict)
     except Exception as e:
         print(str(e))
-
-
-
-
-
-

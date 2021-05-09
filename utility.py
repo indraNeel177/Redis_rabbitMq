@@ -13,9 +13,5 @@ class FileSystem():
     def read(self):
         with open('C:/Users/pnaja/OneDrive/Desktop/test/Redis_rabbitMq/Redis_rabbitMq/const.json', 'r') as f:
             data = json.loads(f.read())
-            self.data= data
+            self.data = data
         return self.data
-
-            
-
-
