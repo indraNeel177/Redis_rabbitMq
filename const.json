@@ -8,5 +8,6 @@
   "rabbitMq_queue": "hello",
   "rabbitMq_host": "localhost",
   "rabbitMq_routing_key": "hello",
-  "rabbitMq_exchange": null
+  "rabbitMq_exchange": null,
+  "log_file_path": "C:/Users/pnaja/OneDrive/Desktop/test/log/"
 }

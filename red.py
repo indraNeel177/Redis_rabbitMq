@@ -1,6 +1,7 @@
 import redis
 from json import dumps, loads
 from utility import FileSystem
+import logging
 
 
 class MetaClass(type):
@@ -40,13 +41,24 @@ class RedisConfig(metaclass=MetaClass):
 if __name__ == '__main__':
     try:
         const = FileSystem().read()
+        filename = FileSystem().read().get("log_file_path")+ str("Redis.log")
+        logging.basicConfig(filename=filename, filemode='w',
+                            format='%(name)s - %(levelname)s - %(message)s')
+        logging.info(msg="Redis logging stared")
         server = RedisConfig(host=const.get("redis_host"), port=const.get("redis_port"),
                              db=const.get("redis_db"), password=const.get("redis_password"),
                              socket_timeout=None)
+
         redis_c = Redis_db(server=server)
+        logging.info(msg="Redis connected to server")
         my_dict = {1: 'apple', 2: 'ball'}
+        logging.info(msg="Redis Set value to database {}".format(str(my_dict)))
         redis_c.setvalue(name="pydict", value=my_dict)
         get = redis_c.getvalue(name="pydict")
-        print(get)
+        logging.log(msg="The value got is {}".format(str(my_dict)))
     except Exception as e:
         print(e)
+        filename = FileSystem().read().get("log_file_path")+ str("Redis.log")
+        logging.basicConfig(filename=filename, filemode='w',
+                            format='%(name)s - %(levelname)s - %(message)s')
+        logging.info(msg="Redis logging Failed and error is {}".format(str(e)))
