@@ -1,6 +1,6 @@
 import redis
 from json import dumps, loads
-from utility import FileSystem, Log
+from utility import Utility
 import logging
 
 
@@ -40,21 +40,20 @@ class RedisConfig(metaclass=MetaClass):
 
 if __name__ == '__main__':
     try:
-        const = FileSystem().read()
-        log = Log(filename="Redis.log")
-        log.log(message="Process redis started")
+        utilities = Utility(filename="Redis.log")
+        const = utilities.data
+        utilities.log(message="Process redis started")
         server = RedisConfig(host=const.get("redis_host"), port=const.get("redis_port"),
                              db=const.get("redis_db"), password=const.get("redis_password"),
                              socket_timeout=None)
-
         redis_c = Redis_db(server=server)
-        log.log(message="Redis server started")
+        utilities.log(message="Redis server started")
         my_dict = {1: 'apple', 2: 'ball'}
-        log.log(message="Redis Set value to database {}".format(str(my_dict)))
+        utilities.log(message="Redis Set value to database {}".format(str(my_dict)))
         redis_c.setvalue(name="pydict", value=my_dict)
-        get = redis_c.getvalue(name="pydict")
-        log.log(message="The value got is {}".format(str(my_dict)))
+        get = loads(redis_c.getvalue(name="pydict"))
+        utilities.log(message="The value got is {}".format(str(get)))
     except Exception as e:
         print(e)
-        log = Log(filename="Redis.log")
-        log.log(message="Redis server error  "+str(e))
+        utilities = Utility(filename="Redis.log")
+        utilities.log(message="Redis server error  "+str(e))

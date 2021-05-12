@@ -1,6 +1,6 @@
 import pika
 import json
-from utility import FileSystem
+from utility import Utility
 
 
 class MetaClass(type):
@@ -13,10 +13,11 @@ class MetaClass(type):
             return cls._instance[cls]
 
 
-class RabbitMQ():
+class RabbitMQ(object):
 
-    def __init__(self, server):
+    def __init__(self, server, utility):
         self.server = server
+        self.utility = utility
         self._connection = pika.BlockingConnection(
             pika.ConnectionParameters(host=self.server.host))
         self._channel = self._connection.channel()
@@ -25,7 +26,7 @@ class RabbitMQ():
     def publish(self, payloads):
         self._channel.basic_publish(
             exchange=self.server.exchange, routing_key=self.server.routing_key, body=json.dumps(payloads))
-        print(" [x] Publish Message  " + str(json.dumps(payloads)))
+        self.utility.log(message=" Publish Message  " + str(json.dumps(payloads)))
         self._connection.close()
 
 
@@ -39,11 +40,14 @@ class RabbitMQConfigure(metaclass=MetaClass):
 
 if __name__ == '__main__':
     try:
-        const = FileSystem().read()
+        utilities = Utility(filename="Sender.log")
+        const = utilities.data
+        utilities.log(message="Process RabbitMq started")
         server = RabbitMQConfigure(
             queue=const.get("rabbitMq_queue"), host=const.get("redis_host"),
-            routing_key=const.get("rabbitMq_routing_key"), exchange=const.get("rabbitMq_exchange"))
-        rabbitMQ = RabbitMQ(server=server)
+            routing_key=const.get("rabbitMq_routing_key"), exchange='')
+        rabbitMQ = RabbitMQ(server=server, utility=utilities)
+        utilities.log(message="RabbitMq server started")
         my_dict = {1: 'apple', 2: 'ball'}
         rabbitMQ.publish(payloads=my_dict)
     except Exception as e:

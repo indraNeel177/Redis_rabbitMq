@@ -2,7 +2,7 @@ import pika
 import json
 import os
 import sys
-from utility import FileSystem
+from utility import Utility
 
 
 class MetaClass(type):
@@ -23,19 +23,20 @@ class RabbitMqServerConfigure(metaclass=MetaClass):
         self.host = host
 
 
-class RabbitMqServer():
-    def __init__(self, server):
+class RabbitMqServer(object):
+    def __init__(self, server, utility):
         self.server = server
+        self.utility = utility
         self._connection = pika.BlockingConnection(
             pika.ConnectionParameters(host=self.server.host))
         self._channel = self._connection.channel()
         self._channel.queue_declare(queue=self.server.queue)
 
     def callback(self, ch, method, properties, body):
-        print(" [x] Received %r" % json.loads(body))
+        self.utility.log(message=" [x] Received " + str(json.loads(body)))
 
     def start_server(self):
-        print(" Waiting to get Messages from server ")
+        self.utility.log(message=" Waiting to get Messages from server")
         self._channel.basic_consume(
             queue=self.server.queue, on_message_callback=self.callback, auto_ack=True)
         self._channel.start_consuming()
@@ -43,9 +44,12 @@ class RabbitMqServer():
 
 if __name__ == '__main__':
     try:
-        const = FileSystem().read()
+        utilities = Utility(filename="Receiver.log")
+        const = utilities.data
+        utilities.log(message="Process RabbitMq started")
         server = RabbitMqServerConfigure(queue=const.get("rabbitMq_queue"), host=const.get("redis_host"))
-        rabbitMq = RabbitMqServer(server=server)
+        rabbitMq = RabbitMqServer(server=server, utility=utilities)
+        utilities.log(message="RabbitMq server started")
         rabbitMq.start_server()
     except KeyboardInterrupt:
         print('Interrupted')
