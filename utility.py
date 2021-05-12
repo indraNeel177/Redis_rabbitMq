@@ -1,13 +1,14 @@
-import sys
+import datetime
 import json
 import os
+import sys
 import logging
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR)
 
 
-class FileSystem():
+class FileSystem(object):
     def __init__(self):
         self.data = None
 
@@ -17,10 +18,14 @@ class FileSystem():
             self.data = data
         return self.data
 
-# class Logging():
-#     def __init__(self):
-#         self.filename = FileSystem().read().get("log_file_path")+ str("Redis.log")
-#
-#     def log(self):
-#         return logging.basicConfig(filename=self.filename, filemode='w', level=logging.INFO,
-#                                            format='%(name)s - %(levelname)s - %(message)s')
+
+class Log(object):
+    def __init__(self, filename):
+        self.filename = filename
+
+    def log(self, message):
+        start = datetime.datetime.now()
+        path = FileSystem().read().get("log_file_path")
+        logging.basicConfig(filename=path + str(self.filename), level=logging.INFO)
+        logging.info(msg='''{}  
+               {}'''.format(str(start), str(message)))
