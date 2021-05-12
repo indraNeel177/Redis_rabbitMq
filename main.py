@@ -7,8 +7,8 @@ from json import loads
 
 class Main(object):
 
-    def redis(self):
-        utilities = Utility(filename="AllLogs.log")
+    def redis(self, filename):
+        utilities = Utility(filename=filename)
         const = utilities.data
         utilities.log(message="Process redis started")
         server = RedisConfig(host=const.get("redis_host"), port=const.get("redis_port"),
@@ -22,8 +22,8 @@ class Main(object):
         get = loads(redis_c.getvalue(name="pydict"))
         utilities.log(message="The value got is {}".format(str(get)))
 
-    def RabbitMqClient(self):
-        utilities = Utility(filename="Sender.log")
+    def RabbitMqClient(self, filename):
+        utilities = Utility(filename=filename)
         const = utilities.data
         utilities.log(message="Process RabbitMq started")
         server = RabbitMQConfigure(
@@ -34,8 +34,8 @@ class Main(object):
         my_dict = {1: 'apple', 2: 'ball'}
         rabbitMQ.publish(payloads=my_dict)
 
-    def RabbitMqServer(self):
-        utilities = Utility(filename="Receiver.log")
+    def RabbitMqServer(self, filename):
+        utilities = Utility(filename=filename)
         const = utilities.data
         utilities.log(message="Process RabbitMq started")
         server = RabbitMqServerConfigure(queue=const.get("rabbitMq_queue"), host=const.get("redis_host"))
@@ -47,9 +47,9 @@ class Main(object):
 if __name__ == '__main__':
     try:
         main = Main()
-        main.redis()
-        main.RabbitMqClient()
-        main.RabbitMqServer()
+        main.redis(filename="Redis.log")
+        main.RabbitMqClient(filename="Client.log")
+        main.RabbitMqServer(filename="Receiver.log")
     except Exception as e:
         print(e)
         utilities = Utility(filename="error.log")
