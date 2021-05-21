@@ -9,7 +9,6 @@ class Redis_db(object):
                                       socket_timeout=self.server.socket_timeout)
 
     def setvalue(self, name, value):
-        value = dumps(value)
         return self.connection.set(name, value)
 
     def getvalue(self, name: str):

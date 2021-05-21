@@ -1,3 +1,5 @@
+import datetime
+
 from utility import Utility, RabbitMQConfigure, RabbitMqServerConfigure, RedisConfig
 from red import Redis_db
 from client import RabbitMQ
@@ -16,10 +18,11 @@ class Main(object):
                              socket_timeout=None)
         redis_c = Redis_db(server=server)
         utilities.log(message="Redis server started")
-        my_dict = {1: 'apple', 2: 'ball'}
+        my_dict = str(False)
         utilities.log(message="Redis Set value to database {}".format(str(my_dict)))
         redis_c.setvalue(name="pydict", value=my_dict)
-        get = loads(redis_c.getvalue(name="pydict"))
+        get = (redis_c.getvalue(name="pydict"))
+        print(get)
         utilities.log(message="The value got is {}".format(str(get)))
 
     def RabbitMqClient(self, filename):
@@ -48,8 +51,6 @@ if __name__ == '__main__':
     try:
         main = Main()
         main.redis(filename="Redis.log")
-        main.RabbitMqClient(filename="Client.log")
-        main.RabbitMqServer(filename="Receiver.log")
     except Exception as e:
         print(e)
         utilities = Utility(filename="error.log")

@@ -3,6 +3,7 @@ import json
 import os
 import sys
 import logging
+import pymysql
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR)
@@ -61,3 +62,25 @@ class RabbitMQConfigure(metaclass=MetaClass):
         self.host = host
         self.routing_key = routing_key
         self.exchange = exchange
+
+
+class DbConfigure(metaclass=MetaClass):
+    def __init__(self, host='localhost', user='root', password="", db='Avileap', port=3308):
+        self.user = user
+        self.host = host
+        self.db = db
+        self.password = password
+        self.port = port
+
+
+class DB(object):
+    def __init__(self, server):
+        self.server = server
+        self.connection = pymysql.connect(host=self.server.host, user=self.server.user, password=self.server.password,
+        db=self.server.db, port=self.server.port)
+        self.cursor = self.connection.cursor()
+
+    def query(self, query):
+        self.cursor.execute(query)
+        output = self.cursor.fetchall()
+        return output
