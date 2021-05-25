@@ -65,7 +65,7 @@ class RabbitMQConfigure(metaclass=MetaClass):
 
 
 class DbConfigure(metaclass=MetaClass):
-    def __init__(self, host='localhost', user='root', password="", db='Avileap', port=3308):
+    def __init__(self, host='localhost', user='root', password="root", db='AviLeap', port=3306):
         self.user = user
         self.host = host
         self.db = db
