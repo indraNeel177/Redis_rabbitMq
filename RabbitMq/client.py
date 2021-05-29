@@ -17,7 +17,7 @@ class RabbitMQ(object):
         self._channel.basic_publish(
             exchange=self.server.exchange, routing_key=self.server.routing_key, body=json.dumps(payloads))
         # self.utility.log(message=" Publish Message  " + str(json.dumps(payloads)))
-        print("Publish Message  " + str(json.dumps(payloads))
+        print("Publish Message  " + str(json.dumps(payloads)))
         self._connection.close()
 
 

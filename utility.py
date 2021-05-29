@@ -30,9 +30,9 @@ class Utility(object):
                                              socket_timeout=None)
         self.redis = Redis_db(server=self._redis_connection)
         self._client_server = RabbitMQConfigure(
-            queue=const.get("rabbitMq_queue"), host=const.get("redis_host"),
-            routing_key=const.get("rabbitMq_routing_key"), exchange='')
-        self._recivcer_server = RabbitMqServerConfigure(queue=const.get("rabbitMq_queue"), host=const.get("redis_host"))
+            queue=self._const.get("rabbitMq_queue"), host=self._const.get("redis_host"),
+            routing_key=self._const.get("rabbitMq_routing_key"), exchange='')
+        self._recivcer_server = RabbitMqServerConfigure(queue=self._const.get("rabbitMq_queue"), host=self._const.get("redis_host"))
 
     def publish(self, my_dict):
         rabbitMQ = RabbitMQ(server=self._client_server)
