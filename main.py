@@ -1,10 +1,7 @@
-import datetime
-
 from utility import Utility, RabbitMQConfigure, RabbitMqServerConfigure, RedisConfig
-from red import Redis_db
+from Redis.red import Redis_db
 from client import RabbitMQ
 from reciver import RabbitMqServer
-from json import loads
 
 
 class Main(object):
