@@ -1,0 +1,245 @@
+2022-01-10 19:09:01.871: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-12-05','Reports/EquipmentServiceability/2021/12/05/Daily_Serviceability_Report2021-12-05.xls')  
+ 
+2022-01-10 19:09:02.627: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.7559175491333008 rows=1
+2022-01-10 19:09:02.628: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 12, 5), 'Reports/EquipmentServiceability/2021/12/05/Daily_Serviceability_Report2021-12-05.xls')]
+2022-01-10 19:09:03.723: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-12-04','Reports/EquipmentServiceability/2021/12/04/Daily_Serviceability_Report2021-12-04.xls')  
+ 
+2022-01-10 19:09:04.472: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.7485764026641846 rows=1
+2022-01-10 19:09:04.472: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 12, 4), 'Reports/EquipmentServiceability/2021/12/04/Daily_Serviceability_Report2021-12-04.xls')]
+2022-01-10 19:09:05.683: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-12-03','Reports/EquipmentServiceability/2021/12/03/Daily_Serviceability_Report2021-12-03.xls')  
+ 
+2022-01-10 19:09:06.318: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.6352903842926025 rows=1
+2022-01-10 19:09:06.319: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 12, 3), 'Reports/EquipmentServiceability/2021/12/03/Daily_Serviceability_Report2021-12-03.xls')]
+2022-01-10 19:09:07.520: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-12-02','Reports/EquipmentServiceability/2021/12/02/Daily_Serviceability_Report2021-12-02.xls')  
+ 
+2022-01-10 19:09:08.369: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.8483946323394775 rows=1
+2022-01-10 19:09:08.369: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 12, 2), 'Reports/EquipmentServiceability/2021/12/02/Daily_Serviceability_Report2021-12-02.xls')]
+2022-01-10 19:09:09.775: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-12-01','Reports/EquipmentServiceability/2021/12/01/Daily_Serviceability_Report2021-12-01.xls')  
+ 
+2022-01-10 19:09:10.625: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.8501121997833252 rows=1
+2022-01-10 19:09:10.626: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 12, 1), 'Reports/EquipmentServiceability/2021/12/01/Daily_Serviceability_Report2021-12-01.xls')]
+2022-01-10 19:09:11.871: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-30','Reports/EquipmentServiceability/2021/11/30/Daily_Serviceability_Report2021-11-30.xls')  
+ 
+2022-01-10 19:09:12.519: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.6469640731811523 rows=1
+2022-01-10 19:09:12.519: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 30), 'Reports/EquipmentServiceability/2021/11/30/Daily_Serviceability_Report2021-11-30.xls')]
+2022-01-10 19:09:13.588: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-29','Reports/EquipmentServiceability/2021/11/29/Daily_Serviceability_Report2021-11-29.xls')  
+ 
+2022-01-10 19:09:14.317: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.7291231155395508 rows=1
+2022-01-10 19:09:14.318: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 29), 'Reports/EquipmentServiceability/2021/11/29/Daily_Serviceability_Report2021-11-29.xls')]
+2022-01-10 19:09:15.524: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-28','Reports/EquipmentServiceability/2021/11/28/Daily_Serviceability_Report2021-11-28.xls')  
+ 
+2022-01-10 19:09:16.549: MainThread: DEBUG:  Main : Update Success , timeTaken = 1.0239381790161133 rows=1
+2022-01-10 19:09:16.549: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 28), 'Reports/EquipmentServiceability/2021/11/28/Daily_Serviceability_Report2021-11-28.xls')]
+2022-01-10 19:09:17.656: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-27','Reports/EquipmentServiceability/2021/11/27/Daily_Serviceability_Report2021-11-27.xls')  
+ 
+2022-01-10 19:09:18.418: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.7613935470581055 rows=1
+2022-01-10 19:09:18.419: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 27), 'Reports/EquipmentServiceability/2021/11/27/Daily_Serviceability_Report2021-11-27.xls')]
+2022-01-10 19:09:19.690: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-26','Reports/EquipmentServiceability/2021/11/26/Daily_Serviceability_Report2021-11-26.xls')  
+ 
+2022-01-10 19:09:20.278: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.5881268978118896 rows=1
+2022-01-10 19:09:20.279: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 26), 'Reports/EquipmentServiceability/2021/11/26/Daily_Serviceability_Report2021-11-26.xls')]
+2022-01-10 19:09:21.451: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-25','Reports/EquipmentServiceability/2021/11/25/Daily_Serviceability_Report2021-11-25.xls')  
+ 
+2022-01-10 19:09:22.028: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.5765750408172607 rows=1
+2022-01-10 19:09:22.029: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 25), 'Reports/EquipmentServiceability/2021/11/25/Daily_Serviceability_Report2021-11-25.xls')]
+2022-01-10 19:09:23.102: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-24','Reports/EquipmentServiceability/2021/11/24/Daily_Serviceability_Report2021-11-24.xls')  
+ 
+2022-01-10 19:09:23.795: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.6931681632995605 rows=1
+2022-01-10 19:09:23.796: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 24), 'Reports/EquipmentServiceability/2021/11/24/Daily_Serviceability_Report2021-11-24.xls')]
+2022-01-10 19:09:25.078: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-23','Reports/EquipmentServiceability/2021/11/23/Daily_Serviceability_Report2021-11-23.xls')  
+ 
+2022-01-10 19:09:25.664: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.5859088897705078 rows=1
+2022-01-10 19:09:25.665: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 23), 'Reports/EquipmentServiceability/2021/11/23/Daily_Serviceability_Report2021-11-23.xls')]
+2022-01-10 19:09:26.833: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-22','Reports/EquipmentServiceability/2021/11/22/Daily_Serviceability_Report2021-11-22.xls')  
+ 
+2022-01-10 19:09:27.644: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.8107509613037109 rows=1
+2022-01-10 19:09:27.645: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 22), 'Reports/EquipmentServiceability/2021/11/22/Daily_Serviceability_Report2021-11-22.xls')]
+2022-01-10 19:09:29.142: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-21','Reports/EquipmentServiceability/2021/11/21/Daily_Serviceability_Report2021-11-21.xls')  
+ 
+2022-01-10 19:09:29.899: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.7565689086914062 rows=1
+2022-01-10 19:09:29.900: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 21), 'Reports/EquipmentServiceability/2021/11/21/Daily_Serviceability_Report2021-11-21.xls')]
+2022-01-10 19:09:30.959: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-20','Reports/EquipmentServiceability/2021/11/20/Daily_Serviceability_Report2021-11-20.xls')  
+ 
+2022-01-10 19:09:31.744: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.7852914333343506 rows=1
+2022-01-10 19:09:31.745: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 20), 'Reports/EquipmentServiceability/2021/11/20/Daily_Serviceability_Report2021-11-20.xls')]
+2022-01-10 19:09:32.815: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-19','Reports/EquipmentServiceability/2021/11/19/Daily_Serviceability_Report2021-11-19.xls')  
+ 
+2022-01-10 19:09:33.434: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.6180529594421387 rows=1
+2022-01-10 19:09:33.434: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 19), 'Reports/EquipmentServiceability/2021/11/19/Daily_Serviceability_Report2021-11-19.xls')]
+2022-01-10 19:09:34.514: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-18','Reports/EquipmentServiceability/2021/11/18/Daily_Serviceability_Report2021-11-18.xls')  
+ 
+2022-01-10 19:09:35.230: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.7163131237030029 rows=1
+2022-01-10 19:09:35.231: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 18), 'Reports/EquipmentServiceability/2021/11/18/Daily_Serviceability_Report2021-11-18.xls')]
+2022-01-10 19:09:36.521: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-17','Reports/EquipmentServiceability/2021/11/17/Daily_Serviceability_Report2021-11-17.xls')  
+ 
+2022-01-10 19:09:37.160: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.6385676860809326 rows=1
+2022-01-10 19:09:37.161: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 17), 'Reports/EquipmentServiceability/2021/11/17/Daily_Serviceability_Report2021-11-17.xls')]
+2022-01-10 19:09:38.360: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-16','Reports/EquipmentServiceability/2021/11/16/Daily_Serviceability_Report2021-11-16.xls')  
+ 
+2022-01-10 19:09:39.109: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.7482662200927734 rows=1
+2022-01-10 19:09:39.110: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 16), 'Reports/EquipmentServiceability/2021/11/16/Daily_Serviceability_Report2021-11-16.xls')]
+2022-01-10 19:09:40.191: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-15','Reports/EquipmentServiceability/2021/11/15/Daily_Serviceability_Report2021-11-15.xls')  
+ 
+2022-01-10 19:09:40.756: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.5649592876434326 rows=1
+2022-01-10 19:09:40.756: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 15), 'Reports/EquipmentServiceability/2021/11/15/Daily_Serviceability_Report2021-11-15.xls')]
+2022-01-10 19:09:41.799: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-14','Reports/EquipmentServiceability/2021/11/14/Daily_Serviceability_Report2021-11-14.xls')  
+ 
+2022-01-10 19:09:42.402: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.6025989055633545 rows=1
+2022-01-10 19:09:42.403: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 14), 'Reports/EquipmentServiceability/2021/11/14/Daily_Serviceability_Report2021-11-14.xls')]
+2022-01-10 19:09:43.491: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-13','Reports/EquipmentServiceability/2021/11/13/Daily_Serviceability_Report2021-11-13.xls')  
+ 
+2022-01-10 19:09:44.247: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.7558772563934326 rows=1
+2022-01-10 19:09:44.247: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 13), 'Reports/EquipmentServiceability/2021/11/13/Daily_Serviceability_Report2021-11-13.xls')]
+2022-01-10 19:09:45.302: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-12','Reports/EquipmentServiceability/2021/11/12/Daily_Serviceability_Report2021-11-12.xls')  
+ 
+2022-01-10 19:09:46.091: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.7885141372680664 rows=1
+2022-01-10 19:09:46.091: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 12), 'Reports/EquipmentServiceability/2021/11/12/Daily_Serviceability_Report2021-11-12.xls')]
+2022-01-10 19:09:47.181: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-11','Reports/EquipmentServiceability/2021/11/11/Daily_Serviceability_Report2021-11-11.xls')  
+ 
+2022-01-10 19:09:47.694: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.5125606060028076 rows=1
+2022-01-10 19:09:47.694: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 11), 'Reports/EquipmentServiceability/2021/11/11/Daily_Serviceability_Report2021-11-11.xls')]
+2022-01-10 19:09:48.781: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-10','Reports/EquipmentServiceability/2021/11/10/Daily_Serviceability_Report2021-11-10.xls')  
+ 
+2022-01-10 19:09:49.371: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.5898027420043945 rows=1
+2022-01-10 19:09:49.372: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 10), 'Reports/EquipmentServiceability/2021/11/10/Daily_Serviceability_Report2021-11-10.xls')]
+2022-01-10 19:09:50.481: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-09','Reports/EquipmentServiceability/2021/11/09/Daily_Serviceability_Report2021-11-09.xls')  
+ 
+2022-01-10 19:09:51.214: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.7322595119476318 rows=1
+2022-01-10 19:09:51.214: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 9), 'Reports/EquipmentServiceability/2021/11/09/Daily_Serviceability_Report2021-11-09.xls')]
+2022-01-10 19:09:52.507: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-08','Reports/EquipmentServiceability/2021/11/08/Daily_Serviceability_Report2021-11-08.xls')  
+ 
+2022-01-10 19:09:53.263: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.7560124397277832 rows=1
+2022-01-10 19:09:53.264: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 8), 'Reports/EquipmentServiceability/2021/11/08/Daily_Serviceability_Report2021-11-08.xls')]
+2022-01-10 19:09:54.507: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-07','Reports/EquipmentServiceability/2021/11/07/Daily_Serviceability_Report2021-11-07.xls')  
+ 
+2022-01-10 19:09:55.107: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.6002042293548584 rows=1
+2022-01-10 19:09:55.108: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 7), 'Reports/EquipmentServiceability/2021/11/07/Daily_Serviceability_Report2021-11-07.xls')]
+2022-01-10 19:09:56.196: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-06','Reports/EquipmentServiceability/2021/11/06/Daily_Serviceability_Report2021-11-06.xls')  
+ 
+2022-01-10 19:09:56.951: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.7549059391021729 rows=1
+2022-01-10 19:09:56.952: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 6), 'Reports/EquipmentServiceability/2021/11/06/Daily_Serviceability_Report2021-11-06.xls')]
+2022-01-10 19:09:58.023: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-05','Reports/EquipmentServiceability/2021/11/05/Daily_Serviceability_Report2021-11-05.xls')  
+ 
+2022-01-10 19:09:58.797: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.7737154960632324 rows=1
+2022-01-10 19:09:58.797: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 5), 'Reports/EquipmentServiceability/2021/11/05/Daily_Serviceability_Report2021-11-05.xls')]
+2022-01-10 19:10:00.052: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-04','Reports/EquipmentServiceability/2021/11/04/Daily_Serviceability_Report2021-11-04.xls')  
+ 
+2022-01-10 19:10:00.645: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.5928988456726074 rows=1
+2022-01-10 19:10:00.646: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 4), 'Reports/EquipmentServiceability/2021/11/04/Daily_Serviceability_Report2021-11-04.xls')]
+2022-01-10 19:10:01.864: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-03','Reports/EquipmentServiceability/2021/11/03/Daily_Serviceability_Report2021-11-03.xls')  
+ 
+2022-01-10 19:10:02.483: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.6189155578613281 rows=1
+2022-01-10 19:10:02.484: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 3), 'Reports/EquipmentServiceability/2021/11/03/Daily_Serviceability_Report2021-11-03.xls')]
+2022-01-10 19:10:03.979: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-02','Reports/EquipmentServiceability/2021/11/02/Daily_Serviceability_Report2021-11-02.xls')  
+ 
+2022-01-10 19:10:04.579: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.5998470783233643 rows=1
+2022-01-10 19:10:04.580: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 2), 'Reports/EquipmentServiceability/2021/11/02/Daily_Serviceability_Report2021-11-02.xls')]
+2022-01-10 19:10:05.801: MainThread: INFO:  Main : 
+ insert into EquipmentDailyServiceabilityReportS3URL
+                            (type, upload_date, s3_url) values('DailyServiceability','2021-11-01','Reports/EquipmentServiceability/2021/11/01/Daily_Serviceability_Report2021-11-01.xls')  
+ 
+2022-01-10 19:10:06.581: MainThread: DEBUG:  Main : Update Success , timeTaken = 0.7794573307037354 rows=1
+2022-01-10 19:10:06.582: MainThread: INFO:  Main : insert into EquipmentDailyServiceabilityReportS3URL
+                              (type, upload_date, s3_url) values  [('DailyServiceability', datetime.date(2021, 11, 1), 'Reports/EquipmentServiceability/2021/11/01/Daily_Serviceability_Report2021-11-01.xls')]

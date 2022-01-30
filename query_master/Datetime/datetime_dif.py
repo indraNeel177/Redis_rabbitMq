@@ -1,8 +1,18 @@
-import datetime
+from datetime import datetime, timedelta
 
-t = "2021-05-21 10:30:00"
-f = "2021-05-21 10:05:47"
 
-diff = datetime.datetime.strptime(t, "%Y-%m-%d %H:%M:%S") - datetime.datetime.strptime(f, "%Y-%m-%d %H:%M:%S")
+# date = datetime.now() 
+# h = []
 
-print(diff.seconds)
+
+# for x in range(97):
+#     date = datetime.now().date()- timedelta(days=x)
+#     h.append(str(date))
+
+# print(h)
+def time_z ():
+    v = datetime.strptime("2022-01-17 16:56:00", '%Y-%m-%d %H:%M:%S')
+    c = datetime.strptime("2022-01-17 13:20:15", "%Y-%m-%d %H:%M:%S")
+    return (v-c).seconds
+
+print(time_z())
